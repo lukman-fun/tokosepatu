@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardKtg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_shoes"
+            android:scaleType="fitXY"
+            android:id="@+id/imgKtg"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgKtg"
+            android:text="SEPATU INDONESIA SANGAT TERKENAL JIKA DI COBA SNEIDIDI"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/namaKtg"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

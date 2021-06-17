@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigasi"
+        app:itemIconTint="@drawable/navigasi_select"
+        app:itemTextColor="@drawable/navigasi_select"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigasi_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigasi"
+        android:layout_marginBottom="6dp" />
+</RelativeLayout>

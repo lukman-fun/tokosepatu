@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#GAGAGAG (Rp 20,000)"
+            android:textSize="16dp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:id="@+id/kode"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:padding="10dp"
+                android:hint="Nama BANK"
+                android:id="@+id/nama_bank"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:padding="10dp"
+                android:hint="Nomor Rekening"
+                android:id="@+id/no_rek"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:padding="10dp"
+                android:hint="Nominal Transfer"
+                android:id="@+id/hrg_tf"
+                android:layout_marginRight="5dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:padding="10dp"
+                android:hint="Atas Nama"
+                android:id="@+id/nama_tf"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Bukti Transfer (Klik gambar)"
+            android:textColor="#F60000"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/default_image"
+            android:scaleType="fitXY"
+            android:id="@+id/imgBukti"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayar"
+                android:id="@+id/btnBayar"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
